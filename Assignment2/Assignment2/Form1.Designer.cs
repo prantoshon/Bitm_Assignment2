@@ -33,13 +33,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.CustomerNametextBox = new System.Windows.Forms.TextBox();
-            this.CustomerNumberTextBox = new System.Windows.Forms.TextBox();
-            this.AddressTextBox = new System.Windows.Forms.TextBox();
-            this.OrderComboBox = new System.Windows.Forms.ComboBox();
-            this.QuantityTextBox = new System.Windows.Forms.TextBox();
             this.SaveButton = new System.Windows.Forms.Button();
+            this.QuantityTextBox = new System.Windows.Forms.TextBox();
+            this.OrderComboBox = new System.Windows.Forms.ComboBox();
+            this.AddressTextBox = new System.Windows.Forms.TextBox();
+            this.CustomerNumberTextBox = new System.Windows.Forms.TextBox();
+            this.CustomerNameTextBox = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.ShowCustomerInfoRichTextBox = new System.Windows.Forms.RichTextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -91,7 +91,7 @@
             this.groupBox1.Controls.Add(this.OrderComboBox);
             this.groupBox1.Controls.Add(this.AddressTextBox);
             this.groupBox1.Controls.Add(this.CustomerNumberTextBox);
-            this.groupBox1.Controls.Add(this.CustomerNametextBox);
+            this.groupBox1.Controls.Add(this.CustomerNameTextBox);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label3);
@@ -105,39 +105,24 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Customer  Information";
             // 
-            // label5
+            // SaveButton
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(43, 237);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 20);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Quantity";
+            this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SaveButton.Location = new System.Drawing.Point(213, 279);
+            this.SaveButton.Name = "SaveButton";
+            this.SaveButton.Size = new System.Drawing.Size(92, 33);
+            this.SaveButton.TabIndex = 10;
+            this.SaveButton.Text = "Save";
+            this.SaveButton.UseVisualStyleBackColor = true;
+            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
             // 
-            // CustomerNametextBox
+            // QuantityTextBox
             // 
-            this.CustomerNametextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerNametextBox.Location = new System.Drawing.Point(213, 60);
-            this.CustomerNametextBox.Name = "CustomerNametextBox";
-            this.CustomerNametextBox.Size = new System.Drawing.Size(187, 22);
-            this.CustomerNametextBox.TabIndex = 5;
-            // 
-            // CustomerNumberTextBox
-            // 
-            this.CustomerNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CustomerNumberTextBox.Location = new System.Drawing.Point(213, 99);
-            this.CustomerNumberTextBox.Name = "CustomerNumberTextBox";
-            this.CustomerNumberTextBox.Size = new System.Drawing.Size(187, 22);
-            this.CustomerNumberTextBox.TabIndex = 6;
-            // 
-            // AddressTextBox
-            // 
-            this.AddressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddressTextBox.Location = new System.Drawing.Point(213, 137);
-            this.AddressTextBox.Name = "AddressTextBox";
-            this.AddressTextBox.Size = new System.Drawing.Size(187, 22);
-            this.AddressTextBox.TabIndex = 7;
+            this.QuantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.QuantityTextBox.Location = new System.Drawing.Point(213, 237);
+            this.QuantityTextBox.Name = "QuantityTextBox";
+            this.QuantityTextBox.Size = new System.Drawing.Size(187, 22);
+            this.QuantityTextBox.TabIndex = 9;
             // 
             // OrderComboBox
             // 
@@ -153,24 +138,39 @@
             this.OrderComboBox.Size = new System.Drawing.Size(121, 24);
             this.OrderComboBox.TabIndex = 8;
             // 
-            // QuantityTextBox
+            // AddressTextBox
             // 
-            this.QuantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.QuantityTextBox.Location = new System.Drawing.Point(213, 237);
-            this.QuantityTextBox.Name = "QuantityTextBox";
-            this.QuantityTextBox.Size = new System.Drawing.Size(187, 22);
-            this.QuantityTextBox.TabIndex = 9;
+            this.AddressTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddressTextBox.Location = new System.Drawing.Point(213, 137);
+            this.AddressTextBox.Name = "AddressTextBox";
+            this.AddressTextBox.Size = new System.Drawing.Size(187, 22);
+            this.AddressTextBox.TabIndex = 7;
             // 
-            // SaveButton
+            // CustomerNumberTextBox
             // 
-            this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(213, 279);
-            this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(92, 33);
-            this.SaveButton.TabIndex = 10;
-            this.SaveButton.Text = "Save";
-            this.SaveButton.UseVisualStyleBackColor = true;
-            this.SaveButton.Click += new System.EventHandler(this.SaveButton_Click);
+            this.CustomerNumberTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerNumberTextBox.Location = new System.Drawing.Point(213, 99);
+            this.CustomerNumberTextBox.Name = "CustomerNumberTextBox";
+            this.CustomerNumberTextBox.Size = new System.Drawing.Size(187, 22);
+            this.CustomerNumberTextBox.TabIndex = 6;
+            // 
+            // CustomerNameTextBox
+            // 
+            this.CustomerNameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CustomerNameTextBox.Location = new System.Drawing.Point(213, 60);
+            this.CustomerNameTextBox.Name = "CustomerNameTextBox";
+            this.CustomerNameTextBox.Size = new System.Drawing.Size(187, 22);
+            this.CustomerNameTextBox.TabIndex = 5;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(43, 237);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Quantity";
             // 
             // ShowCustomerInfoRichTextBox
             // 
@@ -209,7 +209,7 @@
         private System.Windows.Forms.ComboBox OrderComboBox;
         private System.Windows.Forms.TextBox AddressTextBox;
         private System.Windows.Forms.TextBox CustomerNumberTextBox;
-        private System.Windows.Forms.TextBox CustomerNametextBox;
+        private System.Windows.Forms.TextBox CustomerNameTextBox;
         private System.Windows.Forms.RichTextBox ShowCustomerInfoRichTextBox;
     }
 }

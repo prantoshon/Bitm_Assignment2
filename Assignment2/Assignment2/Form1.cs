@@ -19,7 +19,7 @@ namespace Assignment2
 
         private void SaveButton_Click(object sender, EventArgs e)
         {
-            if (CustomerNametextBox.Text == "" )
+            if (CustomerNameTextBox.Text == "" )
             {
 
                 MessageBox.Show("Please Write Your Name");
@@ -42,49 +42,46 @@ namespace Assignment2
                MessageBox.Show("Please Write Order Qunatity");
             }
 
-
-
-
-            else
+      else
             {
 
-                ShowCustomerInfoRichTextBox.AppendText("Customer Name : " + CustomerNametextBox.Text + "\n\n");
+                ShowCustomerInfoRichTextBox.AppendText("Customer Name : " + CustomerNameTextBox.Text + "\n\n");
                 ShowCustomerInfoRichTextBox.AppendText("Customer Contract Number : " + CustomerNumberTextBox.Text + "\n\n");
                 ShowCustomerInfoRichTextBox.AppendText("Customer Address : " + AddressTextBox.Text + "\n\n");
                 ShowCustomerInfoRichTextBox.AppendText("Order Itmes : " + OrderComboBox.Text + "\n\n");
                 ShowCustomerInfoRichTextBox.AppendText("Qunatity : " + QuantityTextBox.Text + "\n\n");
 
-                string Bill_Show;
-                double Total_Bill;
+                string billShow;
+                double totalBill;
                 string quantity = QuantityTextBox.Text;
-                double QuantityOfItem = Convert.ToDouble(quantity);
+                double quantityOfItem = Convert.ToDouble(quantity);
                 if (OrderComboBox.Text == "Black - 120 BDT")
                 {
-                    Total_Bill = 120 * QuantityOfItem;
-                    Bill_Show = Convert.ToString(Total_Bill);
-                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + Bill_Show);
+                    totalBill = 120 * quantityOfItem;
+                    billShow = Convert.ToString(totalBill);
+                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + billShow);
                 }
                 else if (OrderComboBox.Text == "Cold  - 100 BDT")
                 {
-                    Total_Bill = 100 * QuantityOfItem;
-                    Bill_Show = Convert.ToString(Total_Bill);
-                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + Bill_Show);
+                    totalBill = 100 * quantityOfItem;
+                    billShow = Convert.ToString(totalBill);
+                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + billShow);
 
                 }
 
                 else if (OrderComboBox.Text == "Hot    - 90  BDT")
                 {
-                    Total_Bill = 90 * QuantityOfItem;
-                    Bill_Show = Convert.ToString(Total_Bill);
-                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + Bill_Show);
+                    totalBill = 90 * quantityOfItem;
+                    billShow = Convert.ToString(totalBill);
+                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + billShow);
 
                 }
 
                 else if (OrderComboBox.Text == "Regular - 80 BDT")
                 {
-                    Total_Bill = 80 * QuantityOfItem;
-                    Bill_Show = Convert.ToString(Total_Bill);
-                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + Bill_Show);
+                    totalBill = 80 * quantityOfItem;
+                    billShow = Convert.ToString(totalBill);
+                    ShowCustomerInfoRichTextBox.AppendText("Total Bill : " + billShow);
 
                 }
 
